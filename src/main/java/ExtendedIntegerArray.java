@@ -29,6 +29,6 @@ public class ExtendedIntegerArray {
     }
 
     public int sumOf(int position1, int position2){
-        return sum[position2] - sum[position1];
+        return Math.abs(sum[position2] - sum[position1]);
     }
 }
