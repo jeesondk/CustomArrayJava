@@ -23,7 +23,7 @@ public class ExtendedIntegerArray {
             this.sum[index] = value;
     }
 
-    public int getLenght()
+    public int getLength()
     {
         return this.values.length;
     }

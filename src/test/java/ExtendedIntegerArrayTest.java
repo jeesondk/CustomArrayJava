@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -48,15 +47,15 @@ class ExtendedIntegerArrayTest {
     public void ShouldHaveLastPositionAsLenghtMinusOne()
     {
         var array = new ExtendedIntegerArray(10);
-        array.setValue(array.getLenght() - 1, 10);
-        assertEquals(10, array.getValue(array.getLenght() - 1));
+        array.setValue(array.getLength() - 1, 10);
+        assertEquals(10, array.getValue(array.getLength() - 1));
     }
 
     @Test
     void ShouldThrowWhenAcceingPostionEqualToLenght()
     {
         var array = new ExtendedIntegerArray(10);
-        assertThrows(ArrayIndexOutOfBoundsException.class, () -> array.setValue(array.getLenght(),11));
+        assertThrows(ArrayIndexOutOfBoundsException.class, () -> array.setValue(array.getLength(),11));
     }
 
     @Test
