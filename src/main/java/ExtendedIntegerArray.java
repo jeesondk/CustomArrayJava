@@ -7,8 +7,8 @@ public class ExtendedIntegerArray {
         if(size< 1)
             throw new IllegalArgumentException("Array size must be greater than 1");
 
-        sum = new int[size];
-        values = new int[size];
+        this.sum = new int[size];
+        this.values = new int[size];
     }
 
     public int getValue(int index) {
@@ -23,7 +23,10 @@ public class ExtendedIntegerArray {
             this.sum[index] = value;
     }
 
-    public int length = this.values.length;
+    public int getLenght()
+    {
+        return this.values.length;
+    }
 
     public int sumOf(int position1, int position2){
         return sum[position2] - sum[position1];
